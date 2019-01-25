@@ -7,14 +7,9 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-const consume = function(fun) {
-  fun();
+function consume(a, b, fun) {
+  console.log(fun(a, b));
 };
-
-
-consume((a, b) => {
-  fun(a, b);
-});
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -38,8 +33,8 @@ function greeting(firstName, lastName) {
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -48,6 +43,7 @@ consume(2,2,add); // 4
 
 // Explanation: 
 
+// It can access it due to 'internal' not being within a further limited scope. If internal were in another function it would be inaccessible
 
 const external = "I'm outside the function";
 
