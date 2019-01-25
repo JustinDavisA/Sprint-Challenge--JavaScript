@@ -30,23 +30,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.foreach can mutate an array while map creates a new one
+
 2. What is the difference between a function and a method?
+
+Methods are built in functions while we must build functions
 
 3. What is closure?
 
+A closure happense when something attempts access outside of it's scope (i.e Trying to globally access a variable defined in a function)
+
 4. Describe the four rules of the 'this' keyword.
 
+1 Globally 'this' === the console or window
+2 When using functions objects before the '.function' are 'this' 
+3 Constructors return new instances of an object
+4 'this' is explicity defined for call and apply methods
+
 5. Why do we need super() in an extended class?
+
+So that child and parent attributes can be aware of eachother
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
