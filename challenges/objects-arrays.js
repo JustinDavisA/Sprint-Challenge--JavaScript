@@ -149,9 +149,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-let lowerCase = [];
-
-let lcNames = zooAnimals.map((animal) => {
+let lowerCase = zooAnimals.map((animal) => {
   return animal.animal_name.toLowerCase();
 });
 
@@ -162,9 +160,7 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const largerPopulation = [];
-
-let lowPopAnimals = zooAnimals.filter((animal) => {
+const largerPopulation = zooAnimals.filter((animal) => {
   return animal.population < 5;
 });
 
@@ -176,9 +172,7 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 
-let populationTotal = 0;
-
-let popTotal = zooAnimals.reduce((totalPop, animalPop) => {
+let populationTotal = zooAnimals.reduce((totalPop, animalPop) => {
   return totalPop + animalPop.population;
 }, 0);
 
