@@ -45,6 +45,8 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // It can access it due to 'internal' not being within a further limited scope. If internal were in another function it would be inaccessible
 
+// 
+
 const external = "I'm outside the function";
 
 function myFunction() {
